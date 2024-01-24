@@ -135,10 +135,10 @@ const cards = [
   },
 ];
 
-const Investments = () => {
+const RealizedInvestments = () => {
   return (
-    <div className="investments">
-      <h2 className="investments-heading">Fully Realized Investments</h2>
+    <div className="investments wrapper">
+      <h2 className="track-section-heading">Fully Realized Investments</h2>
 
       <div className="investments-cards">
         {cards.map((card, index) => (
@@ -184,4 +184,4 @@ const Investments = () => {
   );
 };
 
-export default Investments;
+export default RealizedInvestments;

@@ -1,13 +1,15 @@
 import React from "react";
 import Hero from "./Hero";
-import Investments from "./Investments";
+import RealizedInvestments from "./RealizedInvestments";
+import ActivelyManagedInvestments from "./ActivelyManagedInvestments";
 import "./index.scss";
 
 const TrackRecord = () => {
   return (
     <div className="track">
       <Hero />
-      <Investments />
+      <RealizedInvestments />
+      <ActivelyManagedInvestments />
     </div>
   );
 };
