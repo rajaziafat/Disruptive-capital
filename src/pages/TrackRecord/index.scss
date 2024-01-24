@@ -1,0 +1,122 @@
+.track {
+  padding-top: 72px;
+
+  .hero {
+    padding-block: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    &-heading {
+      font-size: 32px;
+      color: black;
+      font-weight: 700;
+    }
+
+    &-stats {
+      display: flex;
+      width: 90%;
+      max-width: 900px;
+
+      .hero-stat {
+        display: grid;
+        color: #404040;
+        width: 100%;
+
+        &-title {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        &-value {
+          font-size: 45px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .investments {
+    width: 90%;
+    max-width: 1100px;
+    margin-inline: auto;
+
+    &-heading {
+      font-weight: 500;
+      font-size: 24px;
+      color: #404040;
+    }
+
+    &-cards {
+      display: grid;
+      margin-top: 2.25rem;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .investments-card {
+        padding: 20px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+        color: #333;
+        display: grid;
+        border-radius: 10px;
+        gap: 1rem;
+
+        .card-header {
+          display: flex;
+          gap: 1rem;
+
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+
+          &-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h6 {
+              font-weight: 600;
+            }
+
+            ul {
+              padding-left: 0;
+              list-style: none;
+              font-size: 14px;
+              line-height: 140%;
+            }
+          }
+        }
+
+        .card-stats {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 8px;
+
+          &-stat {
+            display: grid;
+            gap: 4px;
+
+            :nth-child(1) {
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            :nth-child(2) {
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .card-description {
+          margin-bottom: 0;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
