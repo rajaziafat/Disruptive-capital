@@ -147,6 +147,44 @@ const ActivelyManagedInvestments = () => {
           ))}
         </tbody>
       </table>
+
+      <div className="mobile-table">
+        {investmentsData.map((inv, index) => (
+          <div key={index} className="mobile-table-card">
+            <div>
+              <span className="mobile-table-heading">Name</span>
+              <div className="mobile-table-name-section">
+                <img src={inv.img} alt="" />
+
+                <div className="mobile-table-name-content">
+                  <span>{inv.name}</span>
+                  <span>{inv.location}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-table-section">
+              <span className="mobile-table-heading">Acq Date</span>
+              <span className="mobile-table-value">{inv.acqDate}</span>
+            </div>
+
+            <div className="mobile-table-section">
+              <span className="mobile-table-heading">Asset Class</span>
+              <span className="mobile-table-value">{inv.assetClass}</span>
+            </div>
+
+            <div className="mobile-table-section">
+              <span className="mobile-table-heading">Equity</span>
+              <span className="mobile-table-value">{inv.purchasePrice}</span>
+            </div>
+
+            <div className="mobile-table-section">
+              <span className="mobile-table-heading">Risk Profile</span>
+              <span className="mobile-table-value">{inv.riskProfile}</span>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
