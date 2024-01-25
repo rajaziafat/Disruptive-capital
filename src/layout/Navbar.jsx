@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 function TsNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,10 +41,10 @@ function TsNavbar() {
       } ${isNavbarActive ? "ts-navbar--active" : ""}`}
     >
       <Container>
-        <Navbar.Brand className="fw-bold" href="#">
+        <Link className="fw-bold navbar-brand" to="/">
           {/* JACQUESBRIMA */}
           <img width="140" src="/images/logo.svg" alt="Depop Logo" />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}>
           <span></span>
           <span></span>
@@ -52,6 +53,13 @@ function TsNavbar() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto gap-2 pt-4 pt-lg-0">
+            <Link
+              className="text-uppercase nav-link"
+              to="/track-record"
+              rel="noopener noreferrer"
+            >
+              TRACK RECORD
+            </Link>
             <Nav.Link
               className="text-uppercase"
               href="https://portal.dsrptvcapital.com"

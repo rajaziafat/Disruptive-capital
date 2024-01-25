@@ -156,14 +156,14 @@
           gap: 1rem;
 
           img {
-            width: 100%;
+            width: 50%;
             border-radius: 5px;
             object-fit: cover;
             object-position: center;
           }
 
           &-content {
-            width: 100%;
+            width: 50%;
             display: flex;
             flex-direction: column;
 
@@ -206,9 +206,12 @@
             }
 
             :nth-child(2) {
-              font-size: 18px;
+              font-size: 22px;
               font-weight: 600;
 
+              @media (max-width: 1440px) {
+                font-size: 18px;
+              }
               @media (max-width: 400px) {
                 font-size: 16px;
               }
